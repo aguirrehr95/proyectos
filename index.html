@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="es">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Generador de Peinados con IA</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://fonts.googleapis.com/css?family=Roboto:400,700&display=swap" rel="stylesheet">
+  <link href="https://fonts.googleapis.com/icon?family=Material+Icons" rel="stylesheet">
+</head>
+<body>
+  <div class="container-main">
+    <aside class="sidebar">
+      <h2><span class="material-icons">face</span> Peinados IA</h2>
+      <ul>
+        <li class="active">Generar Peinados</li>
+      </ul>
+    </aside>
+    <main class="content">
+      <header>
+        <h1>Prueba Peinados Diferentes</h1>
+        <p class="subtitle">Sube tu foto y mira cómo te verías con otros estilos</p>
+      </header>
+      <section id="upload-section">
+        <label for="photo-upload" class="upload-label">
+          <span class="material-icons">cloud_upload</span>
+          Selecciona una foto
+        </label>
+        <input type="file" id="photo-upload" accept="image/*" style="display:none;">
+      </section>
+      <section id="preview-section" style="display:none;">
+        <h2>Foto Original</h2>
+        <img id="original-photo" class="photo-preview" src="" alt="Foto original">
+        <h2 style="margin-top:32px;">Peinados Generados</h2>
+        <div id="hairstyles-list" class="hairstyles-list"></div>
+      </section>
+    </main>
+  </div>
+  <script src="main.js"></script>
+</body>
+</html>
